@@ -18,14 +18,18 @@ module.exports = {
     mainFields: ["svelte", "browser", "module", "main"],
   },
   output: {
-    path: __dirname + "/public/scripts",
+    path: __dirname + "/public/dist",
     filename: "[name].js",
-    chunkFilename: "[name].[id].js",
+    chunkFilename: "[id].js",
   },
   module: {
     rules: [
       {
-        test: /\.(html|svelte)$/,
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(svelte)$/,
         use: {
           loader: "svelte-loader",
           options: {
@@ -47,6 +51,7 @@ module.exports = {
           },
         },
       },
+
       {
         test: /\.(scss|css)$/,
         use: ["style-loader", "css-loader", "postcss-loader"],
@@ -56,7 +61,11 @@ module.exports = {
   mode,
   plugins: [
     new MiniCssExtractPlugin(),
-    new HtmlWebpackPlugin({ title: "Svelte Webpack", hash: true }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      filename: "index.html",
+      template: "public/template.html",
+    }),
   ],
-  devtool: prod ? false : "source-map",
+  devtool: false,
 };
