@@ -22,6 +22,9 @@ module.exports = {
     filename: "[name].js",
     chunkFilename: "[id].js",
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
