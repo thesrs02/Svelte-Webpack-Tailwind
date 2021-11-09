@@ -10,7 +10,7 @@
     </header>
     <p class="text">
       If you see this page, that means everything worked fine. You can
-      start building your project now!
+      start building your project now!!
     </p>
   </div>
 </div>
