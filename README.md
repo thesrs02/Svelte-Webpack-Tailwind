@@ -1,3 +1,3 @@
-# svelte-vite-tailwind
+# svelte-webpack-tailwind
 
-A minimalist starting point for Svelte, Vite &amp; Tailwind
+A minimalist starting point for Svelte, Webpack &amp; Tailwind
