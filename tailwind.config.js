@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   important: false,
-  purge: ["./src/**/*.{svelte,js}", "./public/index.html"],
+  content: ["./src/**/*.{svelte,js}", "./public/index.html"],
   theme: {
     extend: {},
   },

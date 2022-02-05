@@ -6,7 +6,8 @@
   <div class="container">
     <header class="head">
       <h1 class="heading">Svelte Starter Kit</h1>
-      <small class="caption"><i>(Svelte, Webpack & Tailwindcss)</i></small>
+      <small class="caption"
+        ><i>(Svelte, Vite & Tailwindcss)</i></small>
     </header>
     <p class="text">
       If you see this page, that means everything worked fine. You can
